@@ -2,20 +2,61 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="author" content="SALAME Omar">
     <meta name="description" content="First project bitch">
     <title>Fantasy Football</title>
     <link rel="icon" href="FLlogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="MFL.css">
 </head>
     
 <body>
+          
+    <header>
 
-      <header>
-        <h1><img src="images\BOTOLAPRO1.png" alt="Botola logo"    width="100" height="100" loading="lazy">
-          &nbsp;&nbsp;Moroccan Dream League &nbsp;&nbsp;
-          <img src="images\FLlogo.png" alt="MDL logo" width="150" height="100" loading="lazy"></h1>
+      <nav>
+        <ul class="topnav">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#players">Joueurs</a></li>
+          <li><a href="#clubs">Clubs</a></li>
+          <li><a href="#botolapro">BotolaPro</a></li>
+          <li><a href="#fantasy">Fantasy</a></li>
+          <li><a href="#3Millions">3Millions</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">about</a></li>
+          <div class="search">
+            <div class="search__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <g fill="none" fill-rule="evenodd">
+                        <path stroke="#fff" stroke-width="1.2" d="M12.5714286,12.5714286 L18.8571429,18.8571429" stroke-linecap="square"/>
+                        <circle cx="7.5" cy="7.5" r="6.5" stroke="#fff" stroke-width="1.2"/>
+                    </g>
+                </svg>
+            </div>
+            <form action="/recherche" method="GET" role="search" target="_top" >
+                <input type="search" name="q" value="" placeholder="Rechercher..." aria-label="Rechercher" />
+                <button type="submit" id="submit_search" value="" aria-label="Rechercher">OK</button>
+            </form>
+        </div>
+          <li class="right"><a href="#register">register</a></li>
+        </ul>
+        </nav>
+
+
+        <div class="container container--flex"></div>
+          <div class="menuBurger">
+              <button aria-label="menu">
+                  <span></span>
+              </button>
+          </div>
+    
+        
+        <h1 style="border: 2px solid rgb(0, 0, 0);"></h1style><img src="images\BOTOLAPRO1.png" alt="Botola logo"    width="100" height="100" loading="lazy">
+          &nbsp;&nbsp; Moroccan Dream League &nbsp;&nbsp;
+          <img src="images\FLlogo.png" alt="MDL logo" width="150" height="100" loading="lazy">
+        </h1>
+
 
         <nav>
           <ul>
@@ -32,6 +73,45 @@
     </header>
 
       <hr> <!--horizantal line-->
+      <div class="content "> </div>
+        <div class="topLogos topLogos--teams">
+<a class="" href="/club/hassania-union-sport-dagadir/">
+<img
+src="images/hassania-agadir.png"
+    alt="Hassania Agadir"
+width="30"            height="30"        />
+</a>
+
+
+<a class="" href="/club/olympic-club-de-safi/">
+<img
+src="images/olympic-safi.png"
+    alt="Olympic Safi"
+width="30"            height="30"        />
+
+</a>
+
+<a class="" href="/club/wydad-athletic-club/">
+<img
+src="images/wydad-casablanca.png"
+    alt="Wydad Casablanca"
+width="30"            height="30"        />
+
+</a>
+
+
+<a class="" href="/club/raja-club-athletic-de-casablanca/">
+<img
+src="images/raja-casablanca.png"
+    alt="Raja Casablanca"
+width="30"            height="30"        />
+
+
+</a>
+
+
+
+</div>
     <main>
       <article id="dream">
         <h2>Build your dream team with your favorite players</h2>
@@ -44,7 +124,7 @@
         <br> <!-- rje3 lster-->
         <ol><!-- order list-->
           <li>We're lauching for the 23/24 season</li>
-          <li>Lokk forward to different featurs</li>
+          <li>Look forward to different featurs</li>
         </ol>
       </article>
 
@@ -66,26 +146,45 @@
       </article>
 
       <article id="players">
-        <h2>Search players</h2>
-        <p>  
-          <abbr
-          title="Wydad Atletic Club"><strong>
-            WAC
-          </strong> 
-          </abbr> <strong>players</strong>
-        </p>
+        <h2>Fantasy Team</h2>
+        <div class="box">
+          <button onclick="posmi()">Milieu</button>
+        </div>
+        <script>
+          function posmi(){
 
-        <ul>
-          <li>
-            <p> 
-              Yahya JEBRANE. 
-            </p>
-            <br>
-            <img src="images\jebrane.png" alt="Yahya JEBRANE" width="100" height="190" loading="lazy">
-          </li>
-          
-        </ul>
+          }
+        </script>
+        <div class="box">
+          <button onclick="posatt()">Attaque</button>
+        </div>
+        <script>
+          function posatt(){
+            
+          }
+        </script>
+        <div class="box">
+          <button onclick="posdef()">Defense</button>
+        </div>
+        <script>
+          function posdef(){
+            
+          }
+        </script>
+        <dl>
+          <dt>Gardien</dt>
+          <dd><img src="images/Gard_raja.png" alt="Zniti"    width="30" height="40" loading="lazy"> Anas Zniti</dd>
+          <dt>Defense</dt>
+          <dd><img src="images/wac.png" alt="HAA"    width="30" height="40" loading="lazy"> Hamza Ait Allal</dd>
+          <dt>Milieu</dt>
+          <dd><img src="images/wac.png" alt="Jebrane"    width="30" height="40" loading="lazy"> Yahia Jebrane</dd>
+          <dt>Attaque</dt>
+          <dd><img src="images/FAR.png" alt="Hammoudan"    width="30" height="40" loading="lazy"> Ahmed Hammoudan</dd>
+        </dl>
+        <img src="images/3D_football_pitch.png" alt="Pitch 3D"    width="410" height="420" loading="lazy"> 
+        
       </article>
+
     </main> 
 
       <hr>
