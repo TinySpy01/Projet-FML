@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(79, 228, 148);
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url("") ;*/
+    background-repeat: repeat;
+    background-position: center;
+    margin-right: 200px;
+  }
+    /*debut top navigateur*/
+body {margin: 0;}
+ul.topnav {  position: sticky;top: 0;}
+ul.topnav {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}
+ul.topnav li {float: left;}
+ul.topnav li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+ul.topnav li a:hover:not(.active) {background-color: rgb(201, 17, 17);}
+ul.topnav li a.active {background-color: #04AA6D;}
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px) {ul.topnav li.right, ul.topnav li {float: none;}}
+  /*fin top navigateur*/
+
+/*Debut notif mouse over me*/ 
+.dropdown {position: relative;display: inline-block;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 
+    160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;z-index: 1;}
+.dropdown:hover .dropdown-content {display: block;} 
+ /*fin notif mouse over me*/
+ 
+ /*Debut Log in identifiant*/
+input[type=text] {width: 150px; display: block;margin-bottom: 10px;background-color: whitesmoke;}
+input[type=button] { width: 120px; margin-left: 35px; display: block;}
+ /*fin Log in identifiant*/
+
+ /*Debut Register identifiant*/
+ * {box-sizing: border-box;}
+input[type=text], select, textarea {width: 100%;padding: 12px;border: 1px solid #ccc;
+border-radius: 4px;resize: vertical;}
+label {padding: 12px 12px 12px 0;display: inline-block;}
+input[type=submit] {background-color: #04AA6D;color: white;padding: 12px 20px;border: none;
+border-radius: 4px;cursor: pointer;float: right;}
+input[type=submit]:hover {background-color: #45a049;}
+.container {border-radius: 5px;background-color: #f2f2f2;padding: 20px;}
+.col-25 {float: left;width: 25%;margin-top: 6px;}
+.col-75 {float: left;width: 75%;margin-top: 6px;}
+.row:after {content: "";display: table;clear: both;}/* Clear floats after the columns */
+@media screen and (max-width: 600px) {.col-25, .col-75, input[type=submit] {width: 100%;margin-top: 0;}}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ /*fin Register identifiant*/
+
+ .footer {background-color: #000000;text-align: center;padding: 10px;}
+ /* debut columns*/
+* { box-sizing: border-box;}
+  
+  body {margin: 0;}
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  /*fin colums*/
+img {
+    float: right;
+}
+  div.a {
+    color: rgb(199, 50, 50);
+    display: inline;} 
+h1 {
+    color: rgb(199, 50, 50);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px;
+    border-color: black;
+    border-radius: 5px;
+    outline-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none ;
+    border-left-style: none ;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    text-decoration-line: none ;
+    text-decoration-color: none ;
+    text-decoration-style: none ;
+    text-decoration-thickness: 2px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    z-index: 2;
+    overflow: auto;
+    outline-width: 5px;
+    outline-color: black;
+  }
+
+ul {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+    text-align: left;
+    border: 5px;
+    border-color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 0px;
+  }
+
+dl {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    border-color: none;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    border-color: none ;
+  }
+
+
+/*Scrollbar
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+} */
+
